@@ -1,0 +1,400 @@
+@charset "utf-8";
+
+/* https://www.cdnfonts.com/bullpen.font */
+@import url('http://fonts.cdnfonts.com/css/bullpen');
+
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*   ~ 아이패트 프로 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+        
+    #profile>ul,
+    #skill,
+    #project .bluebox,
+    .pinkbox,
+    #design,
+    #contact,
+    footer,
+    .header_inner,
+    #wrap {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    main article {
+        margin: 0px auto;
+    }
+
+    header{height:70vh;}
+    
+
+    .main_title .box>h1 {
+        font-size: 85px;
+        top:120px
+    }
+
+    .main_title .box>p {
+        padding-top: 220px;
+    }
+
+    .main_title .bgbox,
+    .main_title .box {
+        width: 70%;
+        height: 450px;
+    }
+
+    .main_title .bgbox:first-child,
+    #profile>ul>#photo .bgbox:nth-child(1) {
+        left: 13%;
+    }
+
+    .main_title .bgbox:nth-child(2),
+    #profile>ul>#photo .bgbox:nth-child(2) {
+        left: 15%;
+    }
+
+    .main_title .box,
+    #profile>ul>#photo div {
+        left: 17%;
+    }
+
+
+
+
+
+
+    /* 프로필 */
+    #profile {
+        padding: 0;
+        height: 880px;
+    }
+
+    #profile dl {
+        font-size: 12px;
+    }
+
+    /* 
+#profile > ul{grid-template-columns:57% 43%}
+} */
+
+    #profile>ul>#photo div{height: 550px;}
+
+    #profile>ul>#photo>div>p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+
+
+    /*  스킬  */
+    #skill {
+        box-shadow: 0px 15px #535e76;
+        margin-top: 100px;
+    }
+
+    #skill dl {
+        width: 90%;
+    }
+
+    .title01 {
+        margin: 100px auto;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #skill .battery {
+        width: 75%;
+    }
+
+
+    /* 프로젝트 */
+    .hover{display: none;}
+
+    #project {
+        width: 98%;
+    }
+
+
+    #project ul{grid-template-rows:450px 450px;}
+
+    #project .ui_box {
+        height: 500px;
+    }
+
+    
+    #project div{
+        width: 48%;
+        height: 340px;
+    }
+
+    
+    .ui_box .bgbox:first-child{top: 6%;}
+
+    .ui_box .bgbox:nth-child(2){top: 4%;}
+    
+    .ui_box .box {top: 2%;}
+
+    #project .txtbox{
+        height: 330px;  
+         padding: 0 5% 0;}
+
+    #project .txtbox h2 {
+        font-size: 34px;
+        text-align: center;
+        line-height: 120%;
+            }
+
+
+    #project ul li .num {   
+        text-indent: 26px;
+        margin-top: -9px;
+    }
+
+
+          
+        /* 디자인 모달 */
+        .modal img {
+            width: 60%;
+            margin-top:10vh;         
+        }
+        
+        .modal span {
+            right: inherit;
+            margin-top:10vh;   
+            margin-left: 20px;      
+        }
+
+
+
+    #design .g_list>li .caption{bottom: 0;}
+
+    #design .g_nav>ul>li>a{
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+
+    .btn_area a .btn{height: 45PX; line-height: 0;}
+
+
+
+    /* 컨택 */
+    #contact{margin:100PX auto; margin-bottom: 140px;}
+
+    #contact ul {
+        grid-template-columns: 60% 40%;
+    }
+
+    #contact input,
+    textarea {
+        width: 37vw;
+    }
+
+    #contact>ul>li>h2 {
+        font-size: 40px;
+        margin-bottom: 80px;
+    }
+
+    #contact>ul>li>P {
+        font-size: 20PX;
+        line-height: 70px;
+    }
+
+    #contact > ul > li .bgbox:first-child {LEFT:8%}
+
+    #contact > ul > li .bgbox:nth-child(2){left:9%}
+
+    #contact > ul > li .box{left:10%;}
+
+    @media screen and (max-width: 950px) {
+        .main_title .bgbox, .main_title .box {
+        height: 420px;
+        }
+
+        .main_title .box > h1{
+            font-size: 72px;
+        }
+
+        .main_title .box p{
+            font-size: 24px;
+            padding-top:195px;
+        } 
+    }    
+
+
+
+
+       /* 아이패드 서식*/
+       @media screen and (max-width: 768px){
+            
+        .main_title .bgbox,
+        .main_title .box {
+            width: 90%;
+            height: 60vw;
+        }
+
+        .main_title .bgbox:first-child,
+        #profile>ul>#photo .bgbox:nth-child(1) {
+            left: 3%;
+        }
+
+        .main_title .bgbox:nth-child(2),
+        #profile>ul>#photo .bgbox:nth-child(2) {
+            left: 5%;
+        }
+
+        .main_title .box,
+        #profile>ul>#photo div {
+            left: 7%;
+        }
+    
+        #profile>ul>#photo>div{height: 456px;}
+
+        #profile>ul>#photo div h3 {font-size: 18px;}
+
+        #profile > ul > #photo .photobox >span{height: 250px;}
+
+        
+        #profile>ul>#photo>div>p {
+            font-size: 14px;
+            padding: 0px;
+        }
+
+        #profile dl {
+            margin-bottom: 30px;
+            line-height: 20px;  
+            padding: 0px;          
+        }
+        
+
+        #project div{ width:80%; height: 400px;}
+
+        #project .txtbox{
+            justify-content: center;
+            align-items: center;
+            padding: 0 5%;
+            height: auto;
+        }
+
+        #project ul li .num{font-size: 86px;}
+
+        #project .txtbox h2{font-size: 44px;}
+
+        #project .ui_box{
+            height: 1000px;
+            grid-template-columns: 100%;
+            grid-template-rows: 480px 450px;
+        }
+
+
+        #project table{width: 80%; margin:30px auto;}
+
+
+                
+        .bluebox .bgbox:first-child {                   
+            left:8%;
+            top:4%;
+        }
+
+        .bluebox .bgbox:nth-child(2) {
+            left: 9.5%;                   
+            top:3%;
+        }
+
+        .bluebox .box {
+            left: 11%;
+            top:2%;                   
+            background-color: #fff;
+        }
+
+        #project .pinkbox .bgbox:first-child {
+            right: 8%;
+            top:4%;
+        }
+
+        #project .pinkbox .bgbox:nth-child(2) {
+            right: 9.5%;
+            top:3%;
+        }
+
+        #project .pinkbox .box {
+            right: 11%;
+            top:2%;
+            background-color: #fff;
+        }
+                
+        
+        /*  그리드 에러남 */    
+        #project .pinkbox{grid-template-areas: 
+            "box"
+            "txt";
+        }
+
+        .pinkbox .contents{grid-area: box;}
+        .pinkbox .txtbox{grid-area: txt;} 
+
+             
+    /*  #project .pinkbox .contents{ position:relative; bottom: 480px;}
+
+        #project .pinkbox .txtbox{ position:relative; top: 450px;} */
+
+  
+        /* 컨택 */
+
+        #contact {margin-bottom: 100px;}
+
+        #contact ul .bgbox, #contact ul .box {    
+            height: 350px;
+        }
+
+
+        #contact input, textarea {
+        padding:4px;
+        }
+
+        fieldset p {
+            padding-top: 5px;
+        }  
+
+   
+    }
+
+    aside .topBtn{
+        /* padding: 15px 13px; 
+        border-radius: 50%; 
+        background-color: #dbecb3;*/
+        font-size: 50px; 
+        font-family: 'DungGeunMo', '맑은 고딕', sans-serif;
+        position: absolute;
+        right: 10px;
+        bottom: 180px;
+        text-decoration: none;
+    }
+
+
+        
+        
+        
+}

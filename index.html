@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>윤지영 포트폴리오</title>
+        <!--loading-->
+        <link href="./style/loading.css" rel="stylesheet" type="text/css"/>
+        
+        <!-- 1. 초기화 -->
+        <link href="./style/reset.css" rel="stylesheet" type="text/css"/>
+
+        <!-- 아이콘 폰트 주소 -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            type="text/css"
+            rel="stylesheet"/>
+
+        <!--base-->
+        <link href="./style/base.css" rel="stylesheet" type="text/css"/>
+
+        <!--pc-->
+        <link href="./style/pc0531.css" rel="stylesheet" type="text/css"/>
+
+        <!--모바일-->
+        <link href="./style/mobile-0531.css" rel="stylesheet" type="text/css"/>
+
+        <!--태블릿-->
+        <link href="./style/tablet.css" rel="stylesheet" type="text/css"/>
+
+        <!--검은고딕-->
+        <link
+            href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean"
+            rel="stylesheet"/>
+
+        <!--font font-family: 'Pattaya'-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+            rel="stylesheet">
+
+        <style></style>
+
+        <!-- 파비콘 이미지 -->
+        <link rel="shortcut icon" type="image/x-icon" href="./img/yyjjyy.ico">
+
+        <!--벤더프리픽스 css추가속성 사용시 각 브라우저별 접두사 붙이지 않아도 되는 스크립트.-->
+        <script src="./script/prefixfree.min.js"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+
+        <!-- 제이쿼리 라이브러리 연결-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!--제이쿼리 ui easing스크롤 -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <!-- js-->
+        <script src="./script/script.js"></script>
+
+    </head>
+
+    <body>
+        <div id="wrap">       
+            
+            <!-- 로딩 -->
+            <div id="loading">
+                <div>                  
+                    <h1> 🍙 eat</h1>
+                    <h1> 😴 sleep</h1>
+                    <h1> 👩🏻‍💻 code</h1>
+                    <h1> 🔁 repeat</h1>
+
+                    <!-- <img src="./img/loading.webp" id="loading-image" alt="Loading..."> -->
+                
+                    <a href="javascript:void(0)" class="skip-button">Go To Portofolio</a>
+                    <p> &#x002A; 본 포트폴리오는 반응형으로 제작되었습니다.
+                   <br>계속적인 수정 &#x00B7; 보완 작업중 입니다. 
+                    </p>
+                    
+                </div>                                  
+            </div>
+
+            <!--첫화면에 보이는 인트로 화면-->
+            <header class="intro">
+                <div class="scroll">
+                    <span class="segment">&#x2665; &#x2665; &#x2665; HELLOW!😉 WELCOME TO MY WEBSITE
+                        🙌 &#x2665; &#x2665; &#x2665;</span>
+                    <span class="segment">&#x2665; &#x2665; &#x2665; HELLOW!😉 WELCOME TO MY WEBSITE
+                        🙌 &#x2665; &#x2665; &#x2665;</span>
+                    <span class="segment">&#x2665; &#x2665; &#x2665; HELLOW!😉 WELCOME TO MY WEBSITE
+                        🙌 &#x2665; &#x2665; &#x2665;</span>
+                </div>
+
+                <div class="header_inner">
+
+                    <div class="main_title">
+                        <div class="bgbox"></div>
+                        <div class="bgbox"></div>
+                        <div class="box">
+                            <div class="topbox">
+                                <span>
+                                    <img src="./img/logo.png" alt="로고">
+                                </span>
+
+                                <span>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </span>
+                            </div>
+
+                            <h1>PORTFOLIO</h1>
+
+                            <p>
+                                &#x2665; &#x2665; &#x2665; WELCOME TO MY SPACE :) &#x2665; &#x2665; &#x2665;<br/><br/>Introducing my
+                                <br/>
+                                UI/UX DESIGN &amp; WEB PUBLISHING
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+
+            <!--스티키 내비게이션-->
+            <nav class="gnb">
+                <div class="n_inner">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)" title="소개">
+                                About Me
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" title="스킬">Skill</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" title="작업사이트소개">Project</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" title="디자인">Design</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" title="연락처">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <section>
+                    <article id="profile" class="clearfix">
+                        <h2 class="title01">ABOUT ME  <span>🙂</span></h2>
+                        <ul>
+                            <li id="photo">
+                                <div class="bgbox"></div>
+                                <div class="bgbox highlight"></div>
+                                <div class="photobox">
+                                    <span>background-img</span>
+                                    <h3>안녕하세요!
+                                        <br>신입 웹퍼블리셔 윤지영입니다 :)</h3>
+
+                                    <p>
+                                        탄탄한 기본기를 바탕으로<br>
+                                        빠르게 변화하는 웹 트렌드를 익힐 수 있도록
+                                        <br>
+                                        늘 배움의 자세로 임하겠습니다!
+                                    </p>
+
+                                </div>
+
+                            </li>
+
+                            <li id="resume">
+                                <dl>
+                                    <dt>EDUCATION
+                                    </dt>
+                                    <dd>
+                                        2020.11 ~ 2021.04<br/>
+                                        그린컴퓨터학원<br>
+                                        UI &middot; UX 반응형 웹 디자인 &amp; 웹 퍼블리셔 실무과정 수료
+                                    </dd>
+                                    <dd><br>
+                                        2007 ~ 2010<br/>
+                                        대진대학교 아동학과 수료
+                                    </dd>
+
+                                </dl>
+
+                                <dl>
+                                    <dt>EXPERIENCE</dt>
+
+                                    <dd>EBS 경제 / 공무원 사회 강사 조교</dt>
+                                    <dd>우리동네 가구쟁이 스토어팜/블로그 관리</dt>
+                                    <dd>어린이집 보육교사</dt>
+                                    <dd>교육지대 초등교육부 콘텐츠개발</dt>
+                                </dl>
+
+                                <dl>
+                                    <dt>certificate</dt>
+                                    <dd>웹디자인 기능사</dd>
+                                    <dd>컴퓨터그래픽스운용기능사 필기(실기 취득예정)</dd>
+                                    <dd>워드프로세서 1급</dd>
+                                    <dd>한국사능력검정시험 심화 1급</dd>
+                                    <dd>보육교사 1급</dd>
+                                </dl>
+                                <!-- <span class="f_btn"> <button class="btn">자기소개서 다운로드</button> </span> -->
+                            </li>
+                        </ul>
+                    </article>
+
+                    <div class="skill_wrap">
+                        <article id="skill" class="clearfix">
+                            <h2 class="title01">skill</h2>
+
+                            <ul class="skill_b">
+                                <!-- 배터리 스크립트로 이동-->
+                            </ul>
+
+                            <!-- <h3>✔️ 직관적인 인터페이스와 사용자 경험을 고려하여 디자인합니다. <br>✔️ 웹표준을 바탕으로 적절한 시맨틱 마크업을 통해
+                            접근성을 높입니다. </h3>-->
+
+                            <dl>
+                                <dt>html5
+                                </dt>
+                                <dd class="typewriter">
+                                    &nbsp; 웹 표준을 준수하고 효율적인 코드를 설계합니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>css3</dt>
+                                <dd class="typewriter">
+                                    &nbsp; 미디어쿼리를 활용하여 반응형웹을 구현할 수 있습니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>java script</dt>
+                                <dd class="typewriter">
+                                    &nbsp; 자바스크립트의 기본 문법을 이해하고 기본적인 알고리즘 문제를 해결합니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>jQuery</dt>
+                                <dd class="typewriter">
+                                    &nbsp; 이벤트 메서드를 사용하여 기능을 구현하고 플러그인을 활용할 수 있습니다.</dd>
+                            </dl>
+                            <dl>
+
+                                <dt>
+                                    Photoshop</dt>
+                                <dd class="typewriter">
+                                    &nbsp; 다양한 툴과 편집기능을 활용하여 배너, 상세페이지 등을 제작 할 수 있습니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>Illustrator
+                                </dt>
+                                <dd class="typewriter">
+                                    &nbsp; 다양한 툴을 활용하여 아이콘, 로고 등의 제작과 편집을 할 수 있습니다.</dd>
+                            </dl>
+
+                        </article>
+                    </div>
+                    
+                    <article id="project" class="clearfix">
+                        <h2 class="title01">                               
+                            project                          
+                        </h2>
+                        <span>
+                            [ redesign &amp; Publishing ]</span> 
+                    
+                        <ul class="ui_box bluebox">
+                            <li class="contents clearfix">
+                                <div class="bgbox"></div>
+                                <div class="bgbox"></div>
+                                <div class="box mokup_box01">
+                                    <div>
+                                        <!-- <span>&nbsp; &nbsp; 💕 please hover over 😊</span> -->
+                                        <span>&#x25A0; &#x25A0; &#x25A0; &nbsp;</span>
+                                    </div>
+                                    <img src="./img/study_pc.png" alt="시작 스터디카페 메인페이지">
+                                    <span class="hover">&nbsp; &nbsp; 💕 please hover over 😊</span>
+                                </div>
+                            </li>
+
+                            <li class="txtbox">                                
+                                <span class="num">1.</span><h2> 반응형 메인 페이지<br>스터디카페 '시작'</h2>
+                                
+                                <table>
+                                    <caption>
+                                        퍼블리싱 상세
+                                    </caption>
+                                    <tr>
+                                        <th>제작 기간</th>
+                                        <td>14일</td>
+                                    </tr>
+                                    <tr>
+                                        <th>기여도</th>
+                                        <td>기획 &middot; 디자인 &middot; 퍼블리싱 : 100%
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>작업 도구</th>
+                                        <td>Photoshop, Illustrator, XD, Brackets</td>
+                                    </tr>
+                                    <tr>
+                                        <th>개발 언어</th>
+                                        <td>HTML5, CSS3, JAVASCRIPT, J QUERY</td>
+                                    </tr>
+                                </table>
+                                <span class="btn_area">
+                                    <a href="http://m.cafesizak.com/" target="_blank" title="Original Site">
+                                        <button class="btn">Original Site</button>
+                                    </a>
+                                    <a
+                                        href="http://yyjjyy.dothome.co.kr/sizak"
+                                        target="_blank"
+                                        title="Publishing Site">
+                                        <button class="btn">Publishing site</button>
+                                    </a>
+                                </span>
+                            </li>
+                        </ul>
+
+                        <ul class="ui_box pinkbox">
+                            <li class="txtbox">
+                                <span class="num">2.</span> <h2>반응형 메인 페이지<br>(g)I-DLE'</h2>
+                                <table>
+                                    <caption>
+                                        퍼블리싱 상세
+                                    </caption>
+                                    <tr>
+                                        <th>제작 기간</th>
+                                        <td>7일</td>
+                                    </tr>
+                                    <tr>
+                                        <th>기여도</th>
+                                        <td>기획 &middot; 디자인 &middot; 퍼블리싱 : 100%
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>작업 도구</th>
+                                        <td>Photoshop, Illustrator, XD, VS Code</td>
+                                    </tr>
+                                    <tr>
+                                        <th>개발 언어</th>
+                                        <td>HTML5, CSS3, JAVASCRIPT, J QUERY</td>
+                                    </tr>
+                                </table>
+                                <span class="btn_area">
+                                    <a href="http://www.cubeent.co.kr/gidle" target="_blank" title="Original Site">
+                                        <button class="btn">Original Site</button>
+                                    </a>
+                                    <a href="http://yyjjyy.dothome.co.kr/idle/" target="_blank" title="Publishing site">
+                                        <button class="btn">Publishing Site</button>
+                                    </a>
+                                </span>
+
+                            </li>
+
+                            <li class="contents clearfix">
+                                <div class="bgbox"></div>
+                                <div class="bgbox"></div>
+                                <div class="box mokup_box02">
+                                    <div>
+                                        <!-- <span>&nbsp; &nbsp; 😊 please hover over💕</span> -->
+                                        <span>&#x25A0; &#x25A0; &#x25A0; &nbsp;</span>
+                                    </div>
+                                    <img src="./img/idle.png" alt="여자아이들 메인페이지">
+                                    <span class="hover">&nbsp; &nbsp; 💕 please hover over 😊</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="ui_box bluebox">
+                            <li class="contents clearfix">
+                                <div class="bgbox"></div>
+                                <div class="bgbox"></div>
+                                <div class="box mokup_box05">
+                                    <div>
+                                        <!-- <span>&nbsp; &nbsp; 💕 please hover over 😊</span> -->
+                                        <span>&#x25A0; &#x25A0; &#x25A0; &nbsp;</span>
+                                    </div>
+                                    <img src="./img/ananti1.png" alt="아난티코브 메인페이지">
+                                    <span class="hover">&nbsp; &nbsp; 💕 please hover over 😊</span>
+                                </div>
+                            </li>
+                            
+                            <li class="txtbox">
+                                <span class="num">3. </span> 
+                                <h2>반응형 메인 페이지<br>'아난티코브'</h2>
+                                <table>
+                                    <caption>
+                                        퍼블리싱 상세
+                                    </caption>
+                                    <tr>
+                                        <th>제작 기간</th>
+                                        <td>7일</td>
+                                    </tr>
+                                    <tr>
+                                        <th>기여도</th>
+                                        <td>기획 &middot; 디자인 &middot; 퍼블리싱 : 100%
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>작업 도구</th>
+                                        <td>Photoshop, Illustrator, XD, Brackets</td>
+                                    </tr>
+                                    <tr>
+                                        <th>개발 언어</th>
+                                        <td>HTML5, CSS3, JAVASCRIPT, J QUERY</td>
+                                    </tr>
+                                </table>
+                                <span class="btn_area">
+                                    <a href="https://www.ananti.kr/kr/cove/" target="_blank" title="Original Site">
+                                        <button class="btn">Original Site</button>
+                                    </a>
+                                    <a
+                                        href="http://yyjjyy.dothome.co.kr/ananticove/"
+                                        target="_blank"
+                                        title="Publishing site">
+                                        <button class="btn">Publishing site</button>
+                                    </a>
+                                </span>                               
+                            </li>
+                        </ul>
+
+                        <ul class="ui_box pinkbox">
+                            <li class="txtbox">
+                                <span class="num">4.</span> <h2>모바일 메인 페이지<br>'위드펫 펫시터'</h2>
+
+                                <table>
+                                    <caption>
+                                        퍼블리싱 상세
+                                    </caption>
+                                    <tr>
+                                        <th>제작 기간</th>
+                                        <td>4일</td>
+                                    </tr>
+                                    <tr>
+                                        <th>기여도</th>
+                                        <td>기획 &middot; 디자인 &middot; 퍼블리싱 : 100%
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>작업 도구</th>
+                                        <td>Photoshop, Illustrator, XD, Brackets</td>
+                                    </tr>
+                                    <tr>
+                                        <th>개발 언어</th>
+                                        <td>HTML5, CSS3, JAVASCRIPT, J QUERY</td>
+                                    </tr>
+                                </table>
+                                <span class="btn_area">
+                                    <a href="javascript:void(0)" target="_blank" title="DESIGN PROCESS">
+                                        <button class="btn">준비중입니다.</button>
+                                    </a>
+                                    <a
+                                        href="http://yyjjyy.dothome.co.kr/withpet/"
+                                        target="_blank"
+                                        title="Publishing site">
+                                        <button class="btn">Publishing site</button>
+                                    </a>
+                                </span>
+
+                            </li>
+
+                            <li class="contents clearfix">
+                                <div class="bgbox"></div>
+                                <div class="bgbox"></div>
+                                <div class="box mokup_box04">
+                                    <div>
+                                        <!-- <span>&nbsp; &nbsp; 😊 please hover over💕</span> -->
+                                        <span>&#x25A0; &#x25A0; &#x25A0; &nbsp;</span>
+                                    </div>
+                                    <img src="./img/withpet.png" alt="위드펫 모바일 메인페이지">
+                                    <span class="hover">&nbsp; &nbsp; 💕 please hover over 😊</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="ui_box bluebox">
+                            <li class="contents clearfix">
+                                <div class="bgbox"></div>
+                                <div class="bgbox"></div>
+                                <div class="box mokup_box03">
+                                    <div>
+                                        <!-- <span>&nbsp; &nbsp; 💕 please hover over 😊</span> -->
+                                        <span>&#x25A0; &#x25A0; &#x25A0; &nbsp;</span>
+                                    </div>
+                                    <img src="./img/perfect.png" alt="문병일 퍼펙트사회 메인페이지">
+                                    <span class="hover">&nbsp; &nbsp; 💕 please hover over 😊</span>
+                                </div>
+                            </li>
+
+
+
+                            <li class="txtbox">
+                                <span class="num"> 5.</span> 
+                                 
+                                <h2>반응형 메인 페이지<br>'퍼펙트 사회 문병일'</h2>
+
+                                <table>
+                                    <caption>
+                                        퍼블리싱 상세
+                                    </caption>
+                                    <tr>
+                                        <th>제작 기간</th>
+                                        <td>4일</td>
+                                    </tr>
+                                    <tr>
+                                        <th>기여도</th>
+                                        <td>기획 &middot; 디자인 &middot; 퍼블리싱 : 100%
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>작업 도구</th>
+                                        <td>Photoshop,Illustrator,XD,Brackets</td>
+                                    </tr>
+                                    <tr>
+                                        <th>개발 언어</th>
+                                        <td>HTML5, CSS3, JAVASCRIPT, J QUERY</td>
+                                    </tr>
+                                </table>
+                                <span class="btn_area">
+                                    <a
+                                        href="https://cafe.naver.com/perfectsahoe"
+                                        target="_blank"
+                                        title="Original Site">
+                                        <button class="btn">Original Site</button>
+                                    </a>
+                                    <a
+                                        href="http://yyjjyy.dothome.co.kr/perfectsahoe/"
+                                        target="_blank"
+                                        title="Publishing site">
+                                        <button class="btn">Publishing Site</button>
+                                    </a>
+                                </span>
+
+                            </li>
+                        </ul>
+
+
+                        <ul class="ui_box pinkbox">
+                            <li class="txtbox">
+                                <span class="num">6.</span> <h2>'스타벅스 코리아' <br>클론 코딩</h2>
+
+                                <table>
+                                    <caption>
+                                        퍼블리싱 상세
+                                    </caption>
+                                    <tr>
+                                        <th>제작 기간</th>
+                                        <td>2일</td>
+                                    </tr>
+                                    <tr>
+                                        <th>기여도</th>
+                                        <td>퍼블리싱 : 100%
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>작업 도구</th>
+                                        <td>Visual Studio Code</td>
+                                    </tr>
+                                    <tr>
+                                        <th>개발 언어</th>
+                                        <td>HTML5, CSS3, JAVASCRIPT, J QUERY</td>
+                                    </tr>
+                                </table>
+                                <span class="btn_area">
+                                    <a href="https://priceless-bhabha-83fc0d.netlify.app/" target="_blank" title="DESIGN PROCESS">
+                                        <button class="btn">Original Site</button>
+                                    </a>
+                                    <a
+                                        href="http://yyjjyy.dothome.co.kr/starbucks/"
+                                        target="_blank"
+                                        title="Publishing site">
+                                        <button class="btn">Publishing site</button>
+                                    </a>
+                                </span>
+
+                            </li>
+
+                            <li class="contents clearfix">
+                                <div class="bgbox"></div>
+                                <div class="bgbox"></div>
+                                <div class="box mokup_box06">
+                                    <div>
+                                        <!-- <span>&nbsp; &nbsp; 😊 please hover over💕</span> -->
+                                        <span>&#x25A0; &#x25A0; &#x25A0; &nbsp;</span>
+                                    </div>
+                                    <img src="./img/star.png" alt="스타벅스 메인페이지">
+                                    <span class="hover">&nbsp; &nbsp; 💕 please hover over 😊</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="ui_box bluebox">
+                            <li class="contents clearfix">
+                                <div class="bgbox"></div>
+                                <div class="bgbox"></div>
+                                <div class="box mokup_box07">
+                                    <div>
+                                        <!-- <span>&nbsp; &nbsp; 💕 please hover over 😊</span> -->
+                                        <span>&#x25A0; &#x25A0; &#x25A0; &nbsp;</span>
+                                    </div>
+                                        <p>패럴렉스 스크롤 구현 페이지</p>                               
+                                </div>
+                            </li>
+
+                            <li class="txtbox">
+                                <span class="num"> 7.</span> 
+                                
+                                <h2>라이브러리 활용한<br> 패럴렉스 스크롤 구현</h2>
+
+                                <table>
+                                    <caption>
+                                        퍼블리싱 상세
+                                    </caption>
+                                    <tr>
+                                        <th>제작 기간</th>
+                                        <td>1일</td>
+                                    </tr>
+                                    <tr>
+                                        <th>기여도</th>
+                                        <td>퍼블리싱 : 100% (실습)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>작업 도구</th>
+                                        <td>Visual Studio Code</td>
+                                    </tr>
+                                    <tr>
+                                        <th>개발 언어</th>
+                                        <td>HTML5, CSS3, JAVASCRIPT, J QUERY</td>
+                                    </tr>
+                                </table>
+                                <span class="btn_area">
+                                    <a
+                                        href="javascript:void(0)"
+                                        target="_blank"
+                                        title="Original Site">
+                                        <button class="btn">준비중입니다</button>
+                                    </a>
+                                    <a
+                                        href="http://yyjjyy.dothome.co.kr/skrollr/"
+                                        target="_blank"
+                                        title="Publishing site">
+                                        <button class="btn">Publishing Site</button>
+                                    </a>
+                                </span>
+
+                            </li>
+                    </ul>
+                    </article>
+
+                    <div class="d_wrap">
+                        <article id="design" class="clearfix">
+                            <h2 class="title01">design</h2>
+                            <nav class="g_nav">
+                                <!-- ul>li*5>a[href=# title]-->
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)" title="전체보기">all</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" title="배너">banner</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" title="아이콘">icon</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" title="로고">logo</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" title="기타">ect</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <!-- ul>li*12>a[href=# title]>img[src='./img/img$.jpg' alt=]+span.caption-->
+                            <ul class="g_list">
+                                <li class="total banner">
+                                    <a href="javascript:void(0)" title="아이유 라일락 음원 발매 배너">
+                                        <img src="./img/IU.png" alt="배너">
+                                        <span class="caption">아이유 라일락 음원 발매 배너</span>
+                                    </a>
+                                </li>
+                                <li class="total banner">
+                                    <a href="javascript:void(0)" title="스파오 파자마 페스티벌 sns 배너">
+                                        <img src="./img/spao.png" alt="배너">
+                                        <span class="caption">스파오 파자마 페스티벌 sns 배너</span>
+                                    </a>
+                                </li>
+
+                                <li class="total banner">
+                                    <a href="javascript:void(0)" title="위드펫 쿠폰 이벤트 배너">
+                                        <img src="./img/d3.jpg" alt="배너">
+                                         <span class="caption">위드펫 쿠폰 이벤트 배너</span>
+                                    </a>
+                                </li>
+                                <li class="total banner">
+                                    <a href="javascript:void(0)" title="구독경제 출간 안내 배너">
+                                        <img src="./img/moon.png" alt="구독경제 출간 안내 배너">
+                                        <span class="caption">구독경제 출간 안내 배너</span>
+                                    </a>
+                                </li>
+                                <li class="total banner">
+                                    <a href="javascript:void(0)" title="문병일 수강후기 이벤트 배너">
+                                        <img src="./img/mbibanner.png" alt="문병일 수강후기 이벤트 배너">                               
+                                        <span class="caption">문병일 수강후기 이벤트 배너</span>
+                                    </a>    
+                                </li>
+                                <!-- <li class="total banner"><a href="#" title="배너"><img src="./img/b1.png"
+                                alt="배너"><span class="caption">문병일 수강후기 이벤트 배너</span></a></li> <li class="total
+                                banner"><a href="#" title="배너"><img src="./img/b2.png" alt="배너"><span
+                                class="caption">문병일 소문내기 이벤트 배너</span></a></li> <li class="total banner"><a
+                                href="#" title="배너"><img src="./img/b3.png" alt="배너"><span class="caption">문병일
+                                수강 인증 이벤트 배너</span></a></li> -->
+                                <li class="total logo">
+                                    <a href="javascript:void(0)" title="여자 아이들 로고 디자인">
+                                        <img src="./img/d1.png" alt="여자 아이들 로고 디자인">
+                                        <span class="caption">여자 아이들 로고 디자인</span>
+                                    </a>
+                                </li>
+                                <li class="total logo">
+                                    <a href="javascript:void(0)" title="문병일 퍼펙트사회 로고 디자인">
+                                        <img src="./img/d2.png" alt="문병일 퍼펙트사회 로고 디자인">
+                                        <span class="caption">문병일 퍼펙트사회 로고 디자인</span>
+                                    </a>
+                                </li>
+                                <li class="total logo">
+                                    <a href="javascript:void(0)" title="위드펫 로고">
+                                        <img src="./img/withpet_logo.png" alt="위드펫 로고">
+                                        <span class="caption">위드펫 로고 디자인</span>
+                                    </a>
+                                </li>
+
+                                <li class="total logo">
+                                    <a href="javascript:void(0)" title="로고따라그리기">
+                                        <img src="./img/ll.png" alt="로고따라그리기">
+                                        <span class="caption">실습 - 로고 따라그리기</span>
+                                    </a>
+                                </li>
+                                <!-- <li class="total etc"><a href="#" title="책표지"><img src="./img/book3.png"
+                                alt="책표지"><span class="caption">표지 디자인 - 캡틴모의고사</span></a></li> <li class="total
+                                etc"><a href="#" title="책표지"><img src="./img/book1.png" alt="책표지"><span
+                                class="caption">표지 디자인 - 자료해석 표분석의 기술 </span></a></li> <li class="total etc"><a
+                                href="#" title="책표지"><img src="./img/book2.png" alt="책표지"><span
+                                class="caption">표지 디자인 - 내신구독경제</span></a></li> -->
+                                <li class="total etc">
+                                    <a href="javascript:void(0)" title="책표지"><img src="./img/book.png" alt="책표지">
+                                        <span class="caption">교재 표지 디자인</span>
+                                    </a>
+                                </li>
+                                <li class="total icon">
+                                    <a href="javascript:void(0)" title="시작 스터디카페 아이콘 "><img src="./img/icon2.png" alt="아이콘"> 
+                                        <span class="caption">시작 스터디카페 아이콘 </span>
+                                    </a>
+                                </li>
+                                <li class="total icon">
+                                    <a href="javascript:void(0)" title="위드펫 펫시터 아이콘"><img src="./img/peticon.png" alt="아이콘">
+                                        <span class="caption">위드펫 펫시터 아이콘</span>
+                                    </a>
+                                </li>
+                                <li class="total icon">
+                                    <a href="javascript:void(0)" title="퀵메뉴 아이콘"><img src="./img/quik.png" alt="아이콘">
+                                        <span class="caption">퀵메뉴 아이콘</span>
+                                    </a>
+                                </li>
+                                <li class="total icon">
+                                    <a href="javascript:void(0)" title="SNS 아이콘"><img src="./img/sns.png" alt="아이콘">
+                                        <span class="caption">SNS 아이콘</span>
+                                    </a>
+                                </li>
+                                <li class="total etc">
+                                    <a href="javascript:void(0)" title="3d 입체 캔 만들기"><img src="./img/can.png" alt="etc">
+                                        <span class="caption">일러스트 - 3d 입체 캔 만들기</span>
+                                    </a>
+                                </li>
+                                <li class="total etc">
+                                    <a href="javascript:void(0)" title="나이키 메인페이지 디자인"><img src="./img/nike.png" alt="etc">
+                                        <span class="caption">나이키 메인페이지 디자인 </span>
+                                    </a>
+                                </li>
+                                <li class="total etc">
+                                    <a href="javascript:void(0)" title="withpet 메인 이미지"><img src="./img/petmain.png" alt="etc">
+                                        <span class="caption">withpet 메인 이미지 </span>
+                                    </a>
+                                </li>
+
+                                <li class="total etc">
+                                    <a href="javascript:void(0)" title="전시회 포스터"><img src="./img/brand.png" alt="etc">
+                                        <span class="caption">전시회 포스터</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <article id="contact">
+                        <h2 class="title01">Contact ME</h2>
+
+                        <ul>
+                            <li>
+                                <div class="bgbox highlight"></div>
+                                <div class="bgbox highlight"></div>
+                                <div class="box">
+                                    <div>&#x25A0; &#x25A0; &#x25A0; &nbsp;</div>
+
+                                    <form name="email" method="post" action="send.php">
+                                        <fieldset>
+                                            <legend>contact</legend>
+                                            <p>
+                                                <!-- 1. 이메일 내용 제목-->
+                                                <label for="subject">제목</label>
+                                                <input type="text" maxlength="30" id="subject" name="subject"/>
+                                            </p>
+
+                                            <p>
+                                                <label for="name">이름</label>
+                                                <input type="name" maxlength="30" id="name" name="name"/>
+                                            </p>
+
+                                            <p>
+                                                <label for="email">이메일</label>
+                                                <input type="email" id="email" placeholder="id@도메인주소" name="email"/>
+                                            </p>
+
+                                            <p>
+                                                <label for="message">메시지</label>
+                                                <textarea name="message" id="message" rows="3" placeholder="메시지를 입력해주세요:)"></textarea>
+                                            </p>
+
+                                            <!--보내기-->
+
+                                            <p><input type="submit" value="보내기"/></p>
+                                        </fieldset>
+                                    </form>
+                                    <!-- <p>연락처, sns, 이메일주소, 이메일 폼</p>-->
+                                </div>
+                            </li>
+
+                            <li>
+                                <h2>feel free
+                                    <br>to contact me <span>💖</span></h2>
+
+                                <p>👩🏻‍💻 &nbsp; 윤지영</p>
+                                <p>💌 &nbsp; jiyoungun89@naver.com</p>
+                                <p>📞 &nbsp; 010. 5705. 6142
+                                </p>
+
+                            </li>
+                        </ul>
+                    </article>
+
+                    <span class="status1">세로 스크롤 좌표 값 나오는 곳</span>
+                    <span class="status2">가로 스크롤 좌표 값 나오는 곳</span>
+                </section>
+            </main>
+
+            <aside>
+                <a href="#" title="위로 바로가기" class="topBtn"> 🔝</a>
+            </aside>
+           
+
+            <footer>
+                <address>
+                    이 포트폴리오 사이트는 1920*1080 해상도에 최적화되어 있습니다.크롬, 오페라, 파이어폭스 브라우저에서 크로싱브라우저를
+                    완료하였습니다.<br>
+                    copyright&copy; 2021 jiyoung portfolio allrights reserved.
+                </address>
+            </footer>
+
+          
+        </div>
+    </body>
+
+</html>

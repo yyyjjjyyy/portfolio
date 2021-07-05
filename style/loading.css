@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+#wrap{position: relative;}
+
+#loading {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    /* opacity: 0.7; */
+    background-color: rgb(255, 235, 248);
+    z-index: 999999;
+}
+
+
+    #loading > div {
+        margin: 10px auto;
+        border: 10px solid #aeaefa;
+        border-radius: 20px;
+        background-color: rgb(252, 251, 255);
+        width: 660px; margin: 0px auto;
+        height:820px;
+        padding: 1.5vw 5vw;
+        display: inline-block;
+        text-align: center;
+        box-shadow: 10px 10px #a4ddd2;
+        box-sizing: border-box;
+}
+
+#loading h1 {
+    width:98%; margin: 0 auto;
+    animation: extrude 4s infinite step-end;
+    text-align: left;
+    color: #aeaefa;
+    display: block;
+    font-family: 'DungGeunMo';
+    font-weight: bold;
+    font-size: 70px;
+    letter-spacing: 10px;
+    margin: 40px auto;
+    text-transform: uppercase;
+}
+
+#loading h1:first-child {
+    animation-delay: 1s;
+}
+
+#loading h1:nth-child(2) {
+    animation-delay: 2s;
+}
+
+#loading h1:nth-child(3) {
+    animation-delay: 3s;
+}
+
+#loading h1:last-child {
+    animation-delay: 4s;
+}
+
+@keyframes extrude {
+    0% {
+        text-shadow: 1px 1px #fff, 2px 2px #a4ddd2, 3px 3px #a4ddd2, 4px 4px #a4ddd2, 5px 5px #a4ddd2, 6px 6px #a4ddd2, 7px 7px #a4ddd2, 8px 8px #b4ddd5;
+        /*  9px 9px #303180, 
+    10px 10px #303180; */
+    }
+    25% {
+        text-shadow: none;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    #loading h1{width: 80%;}
+}
+
+
+@media screen and (max-width:800px) {
+    #loading div{width: 80vw; margin: 0 auto; height: 740px;}
+    #loading h1{font-size:55px;}
+}
+
+
+@media screen and (max-width:660px) {
+    #loading div{width: 80vw; margin: 0 auto;}
+    #loading h1{font-size:48px;}
+}
+
+@media screen and (max-width:590px){
+    #loading h1{font-size:45px;}
+    #loading div{padding: 30px;}
+}
+
+
+@media screen and (max-width:570px){
+    #loading h1{font-size:34px; width: 80%;}
+    #loading div{padding: 30px;}
+}
+
+
+
+@media screen and (max-width:540px){
+    #loading h1{font-size:30px; width: 90%;}
+    #loading div{padding: 30px;  height: 650px;}
+    .skip-button {
+       font-size: 16px; padding: 14px;
+    }
+}
+
+@media screen and (max-width:414px){
+    #loading h1{font-size:44px; width: 90%;}
+    #loading div{width: 100vw; height: 100vh; margin:0 auto; padding: 30px;}
+    #loading p{font-size: 13px;}
+    .skip-button{ font-size: 14px; padding: 14px;}
+
+}
+
+@media screen and (max-width:375px){
+    #loading h1{font-size:24px; width: 90%;}
+  
+    #loading p{font-size: 13px;}
+
+    @keyframes extrude {
+        0% {
+            text-shadow: 1px 1px #fff, 2px 2px #a4ddd2, 3px 3px #a4ddd2, 4px 4px #a4ddd2;
+            /*  9px 9px #303180, 
+        10px 10px #303180; */
+        }
+        25% {
+            text-shadow: none;
+        }
+    }
+
+}
+
+.skip-button {
+    display: inline-block;
+    font-family: 'DungGeunMo', '맑은 고딕', 'arial';
+    font-size: 24px;
+    padding: 20px;
+    border: 3px solid #b6b6da;
+    background-color: #b8b8fa;
+    box-shadow: 0 10px #dcdcee;
+    border-radius: 10px;
+    color: #f1f1fc;
+    width: fit-content;
+    margin: 40px 0;
+}
+
+.skip-button:hover {
+    background-color: #b1b1e9;
+    color: rgb(249, 255, 227);
+}
+
+
+#loading p{
+    font-family: 'DungGeunMo', '맑은 고딕', 'arial';
+     font-size: 14px;
+     padding:10px 0;
+     color:#ff9999;
+     font-weight: bold;
+    }
