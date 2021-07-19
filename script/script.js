@@ -126,29 +126,29 @@ $(document).ready(function () {
         ps: 3,
         ai: 3
     };
-    var skillsWrapper = $(".skill_b");
-    Object
-        .keys(skillLevel)
-        .forEach(function (skill) {
-            // const skillElement = `<li id="${skill}">     <div class="battery_top"></div>
-            // <div class="battery">     <div class="in"><i class="fas fa-bolt"></i></div>
-            // <div class="in"></div>     <div class="in"></div>     <div class="in"></div>
-            // <div class="in"></div>     </div>     <p>${skill}</p> </li>`
+//     var skillsWrapper = $(".skill_b");
+//     Object
+//         .keys(skillLevel)
+//         .forEach(function (skill) {
+//             // const skillElement = `<li id="${skill}">     <div class="battery_top"></div>
+//             // <div class="battery">     <div class="in"><i class="fas fa-bolt"></i></div>
+//             // <div class="in"></div>     <div class="in"></div>     <div class="in"></div>
+//             // <div class="in"></div>     </div>     <p>${skill}</p> </li>`
                 
 
-        var skillElement = '<li id="' + skill + '">' +
-        '<div class="battery_top"></div>' +
-        '<div class="battery">' +
-        '<div class="in"><i class="fas fa-bolt"></i></div>' +
-        '<div class="in"></div>' +
-        '<div class="in"></div>' +
-        '<div class="in"></div>' +
-        '<div class="in"></div>' +
-        '</div>' +
-        '<p>' + skill + '</p>' +
-        '</li>'
-    skillsWrapper.append(skillElement);
-});
+//         var skillElement = '<li id="' + skill + '">' +
+//         '<div class="battery_top"></div>' +
+//         '<div class="battery">' +
+//         '<div class="in"><i class="fas fa-bolt"></i></div>' +
+//         '<div class="in"></div>' +
+//         '<div class="in"></div>' +
+//         '<div class="in"></div>' +
+//         '<div class="in"></div>' +
+//         '</div>' +
+//         '<p>' + skill + '</p>' +
+//         '</li>'
+//     skillsWrapper.append(skillElement);
+// });
 
 
     //스크롤값 확인 화면 스크롤이 동작하면 아래 내용이 실행된다.
@@ -222,13 +222,13 @@ $(document).ready(function () {
                 .keys(skillLevel)
                 .forEach(function (key) {
                     var level = skillLevel[key];
-                    animateSkills(key, level);
+                    // animateSkills(key, level);
                 });
         } else {
             Object
                 .keys(skillLevel)
                 .forEach(function (key) {
-                    resetSkills(key);
+                    // resetSkills(key);
                 });
         }
     }, 50));
