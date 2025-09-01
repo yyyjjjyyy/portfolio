@@ -74,7 +74,7 @@ const projects = [
     tool: "Brackets, Photoshop",
     lang: "HTML5, CSS3, JS, JQUERY",
     original: "#",
-    publish: "scrollr-effect.netlify.app",
+    publish: "https://scrollr-effect.netlify.app/",
   },
   {
     title: "모바일 메인 페이지<br>'위드펫 펫시터'",
