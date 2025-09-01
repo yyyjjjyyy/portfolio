@@ -25,6 +25,7 @@
   align-items: center;
   background-color: rgb(255, 235, 248);
   z-index: 100;
+  overflow: hidden;
 }
 
 #loading > div {

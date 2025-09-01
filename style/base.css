@@ -109,7 +109,7 @@ header {
   font-family: "DungGeunMo", "맑은 고딕";
   display: inline-block;
   line-height: 40px;
-  animation: scroll 10s infinite linear;
+  animation: moveLeft 10s infinite linear;
 }
 
 .segment .segment {
@@ -295,16 +295,30 @@ main article {
   box-sizing: border-box;
 }
 
+#photo,
+#resume {
+  opacity: 0;
+  transform: translateY(40px); /* 살짝 아래에서 시작 */
+  transition: all 0.8s ease;
+}
+
+/* 우선순위 강화 */
+#photo.show,
+#resume.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* 사진 */
 #profile ul > #photo {
   position: relative;
-  opacity: 0;
   width: 100%;
+  opacity: 0; /* 초기값 */
 }
 
 #profile ul #resume {
   padding: 10px 0;
-  opacity: 0;
+  opacity: 0; /* 초기값 */
 }
 
 #profile > ul > #photo div {
@@ -361,9 +375,9 @@ main article {
   background-image: url(../img/p11.jpg);
   background-position: center;
   background-size: cover;
-  animation-name: profileImg; /*애니메이션 이름 설정*/
-  animation-duration: 12.5s; /*애니메이션 시간 설정*/
-  animation-iteration-count: infinite; /*애니메이션 반복 횟수*/
+  animation-name: profileImg;
+  animation-duration: 12.5s;
+  animation-iteration-count: infinite;
   text-indent: -89888px;
 }
 
@@ -384,10 +398,8 @@ main article {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
-
   color: #5f567aea;
   display: inline-block;
-
   margin-bottom: 10px;
 }
 
@@ -399,7 +411,6 @@ main article {
 .f_btn {
   display: inline-block;
   margin-top: 20px;
-  /* text-align: center; */
   width: 100%;
 }
 
@@ -617,276 +628,6 @@ button.btn:active::before {
      background-color:#ffa3a3;
 }
 */
-
-/*   프로젝트 리디자인 & 퍼블리싱     */
-/* 
-#project {
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-#project > h2 {
-    margin-bottom: 0;
-}
-
-#project > span {
-    display: block;
-    font: bold 30px 'S-CoreDream-4Regular', '맑은 고딕', 'san-serif';
-    text-align: center;
-    text-transform: uppercase;
-    color: #606085;
-    font-style: italic;
-    margin: 40px 0 80px;
-}
-
-#project .ui_box {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    position: relative;
-    box-sizing: border-box;
-}
-
-#project div {
-    border: 3px solid #333;
-    position: absolute;
-}
-
-#contact .box > div,
-#project .box > div {
-    display: block;
-    text-align: right;
-    font-size: 18px;
-    line-height: 30px;
-    color: #FFF2BE;
-    -webkit-text-stroke: 2px #333;
-}
-
-.bluebox .bgbox {
-    background-color: #cac6d1;
-}
-
-#project .box > div {
-    width: 100%;
-    height: 10%;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 3px solid #333;
-}
-
-#project .bluebox .box > div {
-    background-color: #e9e3fd;
-}
-
-#project .pinkbox .bgbox {
-    background-color: #f2cfc7;
-}
-
-#project .pinkbox .box > div {
-    background-color: #d36060;
-}
-
-.bluebox .bgbox:first-child {
-    z-index: 100;
-}
-
-.bluebox .bgbox:nth-child(2) {
-    left: 1%;
-    z-index: 200;
-}
-
-.bluebox .box {
-    left: 2%;
-    z-index: 300;
-    background-color: #fff;
-}
-
-#project .pinkbox .bgbox:first-child {
-    right: 0;
-    z-index: 100;
-}
-
-#project .pinkbox .bgbox:nth-child(2) {
-    right: 1%;
-    z-index: 200;
-}
-
-#project .pinkbox .box {
-    right: 2%;
-    z-index: 300;
-    background-color: #fff;
-}
-
-
-#project .txtbox {
-    width: 100%;
-    height: 330px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px 5%;
-}
-
-#project ul li .num {
-    font-family: 'yg-jalnan', Impact, 'Arial Narrow Bold', sans-serif;
-    font-size: 80px;
-    padding-right: 20px;
-}
-
-#project .txtbox h2 {
-    font-family: 'yg-jalnan';
-    font-size: 44px;
-    line-height: 100%;
-    display: inline-flex;
-    text-align: center;
-}
-
-#project .bluebox .num,
-#project .bluebox h2 {
-    color: #d0b4f5 !important;
-    text-shadow: 0 8px 5px #e0fae8;
-}
-
-#project .pinkbox .num,
-#project .pinkbox h2 {
-    color: #e26c6c !important;
-    text-shadow: 0 8px 5px #faf2c8;
-}
-
-#project ul li p {
-    text-align: left;
-    font-size: 30px;
-}
-
-
-.txtbox >table{
-    width: 80%;
-    margin: 30px auto;
-}
-
-.txtbox > table > caption {
-    display: none;
-}
-
-.txtbox > table,
-.txtbox td,
-.txtbox th {
-    font-size: 14px;
-    line-height: 24px;
-    text-align: left;
-    font-family: 'S-CoreDream-4Regular', '맑은 고딕', 'san-serif';
-    padding: 10px;
-
-}
-
-table tr {
-    border-bottom: 1px solid #ccc;
-
-}
-
-.btn_area {
-    border: none !important;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-
-.btn_area a {
-    text-decoration: none;
-
-}
-
-.btn_area a .btn {
-    width: 170px;
-    height: 60px;
-    display: inline-block;
-    margin: 0 8px;
-    text-transform: capitalize;
-}
-
-.bluebox .btn_area a .btn {
-    background-color: #f1ecff;
-    border: 2px solid #a4a0c1;
-}
-
-.bluebox .btn_area a .btn::before {
-    background: #dccdea;
-    box-shadow: 0 0 0 2px #a4a0c1, 0 0.625em 0 0 #ded6f2;
-}
-
-.pinkbox .btn_area a .btn {
-    background-color: #ffebe8;
-    border: 2px solid #c79c9c;
-}
-
-.pinkbox .btn_area a .btn::before {
-    background: #ffd0ca;
-    box-shadow: 0 0 0 2px #c79c9c, 0 0.625em 0 0 #ffe8e8;
-}
-
-
-
-.ui_box .box {
-    overflow: hidden;
-    position: relative;
-}
-
-.ui_box .box img {
-    width: 100%;
-    position: absolute;
-    top: 10%;
-}
-
-.ui_box .box div {
-    z-index: 1000;
-}
-
-.pink_box .box div .hover {
-    -webkit-text-stroke: none;
-    font-family: 'Pattaya', sans-serif;
-    font-size: 16px;
-    line-height: 30px;
-    text-transform: capitalize;
-    color: rgb(253, 239, 239);
-}
-
-.hover {
-    -webkit-text-stroke: none;
-
-}
-
-.bluebox .box > div .hover {
-    color: rgb(107, 107, 148);
-    text-align: center;
-}
-
-.pinkbox .hover {
-    color: rgb(153, 41, 41);
-}
-
-.bluebox .hover {
-    color: rgb(107, 107, 148);
-}
-
-.contents:hover .hover {
-    opacity: 0;
-}
-
-.mokup_box07{
-    background-image: url(../img/skrollr1.png);
-    background-position:center;
-    background-size:110% 100%;
-    background-repeat: no-repeat;
-    animation-name: skrollrImg;
-	animation-duration: 13.5s;
-	animation-iteration-count: infinite;
-    text-indent: -89888px;
-    padding-bottom:100px;
-
-}
-
-
-/* 
 
 /* 디자인 */
 

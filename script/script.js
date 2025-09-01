@@ -4,18 +4,19 @@ $(document).ready(function () {
   // });
 
   // 인트로페이지
-
-  $(function () {
+  $(document).ready(function () {
     var welcomSection = $("#loading"),
       skipButton = welcomSection.find(".skip-button");
 
-    setTimeout(function () {
-      welcomSection.removeClass("#loading");
-    }, 800);
+    // 처음엔 무조건 스크롤 막기
+    $("body").css("overflow", "hidden");
 
+    // 스킵 버튼 누르면 로딩영역 닫히고 스크롤 허용
     skipButton.on("click", function (e) {
       e.preventDefault();
-      welcomSection.addClass("#loading").fadeOut();
+      welcomSection.fadeOut(600, function () {
+        $("body").css("overflow", "auto"); // 스크롤 허용
+      });
     });
   });
 
@@ -61,12 +62,10 @@ $(document).ready(function () {
 
     if (sPos >= $("#profile").offset().top) {
       //들어옴
-      //  $('#photo').addClass('show');
-      // $('#photo').animate({'opacity':'1'},10);
-      // $('#resume').animate({'opacity':'1'},10);
-
-      $("#photo").animate({ opacity: "1" }, 1000, "swing");
-      $("#resume").animate({ opacity: "1" }, 1500, "swing");
+      $("#photo").addClass("show");
+      $("#resume").addClass("show");
+      $("#photo").animate({ opacity: "1" }, 100);
+      $("#resume").animate({ opacity: "1" }, 100);
     }
   });
 

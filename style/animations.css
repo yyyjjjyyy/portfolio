@@ -172,7 +172,18 @@
     transform: translateY(-100%);
   }
 }
-@keyframes skrollrImg {
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* @keyframes skrollrImg {
   0% {
     background-image: url(../img/skrollr1.png);
   }
@@ -186,3 +197,4 @@
     background-image: url(../img/skrollr4.png);
   }
 }
+ */
