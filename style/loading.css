@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   background-color: rgb(255, 235, 248);
-  z-index: 999999;
+  z-index: 100;
 }
 
 #loading > div {
@@ -47,7 +47,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
 }
 #loading .main-text h1 {
   animation: extrude 4s infinite step-end;
@@ -88,8 +88,9 @@
   box-shadow: 0 10px #dcdcee;
   border-radius: 10px;
   color: #f1f1fc;
-  width: fit-content;
+  width: 60%;
   margin: 40px 0;
+  text-align: center;
 }
 
 .skip-button:hover {
@@ -103,13 +104,14 @@
   padding: 10px 0;
   color: #ff9999;
   font-weight: bold;
+  text-wrap: pretty;
+  text-align: center;
 }
 
 /* 태블릿 이하 */
 @media screen and (max-width: 1024px) {
   #loading > div {
     width: 80vw;
-    height: 70vh;
   }
   #loading h1 {
     font-size: clamp(34px, 6vw, 55px);
@@ -120,15 +122,15 @@
 @media screen and (max-width: 700px) {
   #loading > div {
     width: 80vw;
-    height: auto;
-    padding: 30px;
+    padding: 20px;
   }
   #loading .main-text h1 {
-    font-size: clamp(24px, 8vw, 34px);
+    font-size: clamp(24px, 8vw, 40px);
     letter-spacing: 5px;
   }
   #loading p {
-    font-size: 13px;
+    font-size: 11px;
+    letter-spacing: -1px;
   }
   .skip-button {
     font-size: 14px;

@@ -136,10 +136,10 @@
     padding-top: 120px;
   }
 
-  .title01 {
+  .section-title {
     font-size: 40px;
-    margin: 0;
     padding: 40px 0;
+    margin: 0;
   }
 
   /* 프로필 */
@@ -166,18 +166,6 @@
     height: 464px;
   }
 
-  /* #profile>ul>#photo .bgbox:nth-child(1) {
-        left: 1%;
-    }
-
-    #profile>ul>#photo .bgbox:nth-child(2) {
-        left: 2%;
-    }
-
-    #profile>ul>#photo div {
-        left: 3%;
-    } */
-
   #profile > ul {
     height: 400px;
   }
@@ -198,7 +186,7 @@
   }
 
   #profile > ul > #photo > div > p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   #profile > ul > #photo div {
@@ -235,7 +223,9 @@
     width: 33%;
     height: auto;
   }
-
+  #skill h3 {
+    display: none;
+  }
   #skill dl {
     display: none;
   }
@@ -259,13 +249,33 @@
     animation-iteration-count: infinite;
   }
 
-  /* 프로젝트 */
+  @keyframes batterycolor {
+    0% {
+      background-color: #ff9999;
+    }
 
+    50% {
+      background-color: #ffd093cc;
+    }
+
+    100% {
+      background-color: #fff2bd;
+    }
+  }
+
+  /* 프로젝트 */
+  .project-wrap {
+    margin: 0 auto;
+  }
+  .sub-title {
+    font-size: 14px;
+    margin: 0px auto;
+  }
   .project-item {
     flex-direction: column !important;
-    gap: 30px;
+    gap: 40px;
     width: 80%;
-    margin: 60px auto;
+    margin: 30px auto 60px;
   }
   .project-mockup,
   .project-box {
@@ -296,6 +306,8 @@
   .btn_area.single-btn .btn {
     width: 300px;
   }
+
+  /* 디자인 */
 
   .modal img {
     width: 70%;
@@ -425,6 +437,7 @@
 
     #profile > ul > #photo > div > p {
       font-size: 12px;
+      line-height: 20px;
     }
 
     #project ul li .num {
@@ -529,31 +542,6 @@
 
   #skill .skill_b {
     width: 80%;
-  }
-
-  #project div {
-    height: 300px;
-  }
-
-  #project .ui_box {
-    grid-template-rows: 360px 400px;
-    height: 820px;
-  }
-
-  #project .pinkbox .bgbox:first-child {
-    right: -1%;
-    top: 4%;
-  }
-
-  #project .pinkbox .bgbox:nth-child(2) {
-    right: 1%;
-    top: 3%;
-  }
-
-  #project .pinkbox .box {
-    right: 3%;
-    top: 2%;
-    background-color: #fff;
   }
 
   #contact ul .bgbox {
