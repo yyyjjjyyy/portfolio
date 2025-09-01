@@ -1,0 +1,188 @@
+@keyframes profileImg {
+  0% {
+    background-image: url(../img/p11.jpg);
+  }
+  35% {
+    background-image: url(../img/p2.jpg);
+  }
+  65% {
+    background-image: url(../img/p3.jpg);
+  }
+  100% {
+    background-image: url(../img/p11.jpg);
+  }
+}
+
+/* 타이핑 */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 40%;
+  }
+}
+
+/* 타이핑 커서 */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #333;
+  }
+}
+
+@keyframes ani02 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes batterycolor {
+  0% {
+    background-color: #ff9999;
+  }
+
+  50% {
+    background-color: #ffd093cc;
+  }
+
+  100% {
+    background-color: #fff2bd;
+  }
+}
+
+@keyframes animateShadow {
+  100% {
+    text-shadow:
+      0 0 #fff2bd,
+      -1px 1px #fff2bd,
+      -2px 2px #fff2bd,
+      -3px 3px #fff2bd,
+      -4px 4px #fff2bd,
+      -5px 5px #fff2bd,
+      -6px 6px #fff2bd,
+      -7px 7px #fff2bd,
+      -8px 8px #fff2bd,
+      -9px 9px #fff2bd,
+      -10px 10px #fff2bd,
+      -11px 11px #fff2bd,
+      -12px 12px #fff2bd,
+      -13px 13px #fff2bd,
+      -14px 14px #fff2bd,
+      -15px 15px #fff2bd,
+      -16px 16px #fff2bd;
+  }
+}
+
+@keyframes bgcolor {
+  0% {
+    background-color: #ffe4fd;
+  }
+
+  20% {
+    background-color: #ffeade;
+  }
+
+  40% {
+    background-color: #fffed7;
+  }
+
+  60% {
+    background-color: #efffde;
+  }
+
+  80% {
+    background-color: #efddff;
+  }
+
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 로딩 */
+@keyframes extrude {
+  0% {
+    text-shadow:
+      1px 1px #fff,
+      2px 2px #a4ddd2,
+      3px 3px #a4ddd2,
+      4px 4px #a4ddd2,
+      5px 5px #a4ddd2,
+      6px 6px #a4ddd2,
+      7px 7px #a4ddd2,
+      8px 8px #b4ddd5;
+    /*  9px 9px #303180, 
+    10px 10px #303180; */
+  }
+  25% {
+    text-shadow: none;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes skrollrImg {
+  0% {
+    background-image: url(../img/skrollr1.png);
+  }
+  35% {
+    background-image: url(../img/skrollr2.png);
+  }
+  65% {
+    background-image: url(../img/skrollr3.png);
+  }
+  100% {
+    background-image: url(../img/skrollr4.png);
+  }
+}

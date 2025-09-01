@@ -1,0 +1,562 @@
+@charset "utf-8";
+
+/* https://www.cdnfonts.com/bullpen.font */
+@import url("http://fonts.cdnfonts.com/css/bullpen");
+
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-4Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "yg-jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 모바일 서식 */
+@media screen and (max-width: 767px) {
+  main article,
+  #profile,
+  #skill,
+  #project .bluebox,
+  #project .pinkbox,
+  #design,
+  #contact,
+  footer,
+  .header_inner {
+    width: 100%;
+  }
+
+  main article {
+    margin: 0px auto;
+  }
+
+  header {
+    height: 70vh;
+  }
+
+  .segment {
+    font-size: 12px;
+    line-height: 33px;
+  }
+
+  .header_inner .main_title {
+    width: 100%;
+    top: 10%;
+  }
+
+  .main_title .bgbox,
+  .main_title .box {
+    width: 80%;
+  }
+
+  .main_title .bgbox:first-child,
+  #profile > ul > #photo .bgbox:nth-child(1) {
+    left: 2%;
+  }
+
+  .main_title .bgbox:nth-child(2),
+  #profile > ul > #photo .bgbox:nth-child(2) {
+    left: 5%;
+  }
+
+  .main_title .box,
+  #profile > ul > #photo div {
+    left: 8%;
+  }
+
+  .box .topbox {
+    height: 40px;
+  }
+
+  /* 내비게이션 */
+
+  .gnb .n_inner > ul > li > a {
+    display: block;
+    padding: 17px 0px;
+    line-height: 50px;
+    font:
+      bold 12px "S-CoreDream-4Regular",
+      "맑은 고딕";
+  }
+
+  #profile > ul {
+    width: 95%;
+    display: inherit;
+    grid-template-columns: inherit;
+    flex-direction: inherit;
+  }
+
+  .main_title .bgbox,
+  .main_title .box {
+    width: 90%;
+    margin: 0px auto;
+    height: 320px;
+    border: 2px solid #333;
+  }
+
+  .main_title .topbox {
+    border: none;
+    height: 15%;
+    border-bottom: 1px solid #333;
+  }
+
+  .topbox span {
+    align-content: flex-end;
+    padding: 0 10px;
+  }
+
+  .box .topbox div {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #333;
+  }
+
+  .main_title .box > h1 {
+    font-size: 44px;
+    top: 80px;
+  }
+
+  .main_title .box p {
+    font-size: 14px;
+    padding-top: 120px;
+  }
+
+  .title01 {
+    font-size: 40px;
+    margin: 0;
+    padding: 40px 0;
+  }
+
+  /* 프로필 */
+  #profile > ul > #photo .photobox > span {
+    display: block;
+    width: 100%;
+    height: 250px;
+  }
+
+  #profile {
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+  }
+
+  #profile > ul > #photo {
+    height: 400px;
+    position: absolute;
+    left: 0px;
+  }
+
+  #profile > ul > #photo div {
+    width: 27%;
+    height: 464px;
+  }
+
+  /* #profile>ul>#photo .bgbox:nth-child(1) {
+        left: 1%;
+    }
+
+    #profile>ul>#photo .bgbox:nth-child(2) {
+        left: 2%;
+    }
+
+    #profile>ul>#photo div {
+        left: 3%;
+    } */
+
+  #profile > ul {
+    height: 400px;
+  }
+
+  #profile > ul > #photo {
+    height: 300px;
+    position: relative;
+    /* left: -115px; */
+    opacity: 1;
+  }
+
+  #photo div {
+    right: unset;
+  }
+
+  #profile > ul > #photo div h3 {
+    font-size: 18px;
+  }
+
+  #profile > ul > #photo > div > p {
+    font-size: 14px;
+  }
+
+  #profile > ul > #photo div {
+    /* width: 320px; */
+    /* height: 452px; */
+    width: 90%;
+  }
+
+  /* #resume{ text-align: center;} */
+  #profile ul #resume {
+    display: none;
+  }
+
+  /* 스킬 */
+  #skill {
+    border: none;
+    box-shadow: none;
+    padding: 40px 0;
+    background-color: #fff;
+  }
+
+  #skill .battery {
+    width: 75%;
+  }
+
+  #skill .skill_b {
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  #skill .skill_b li {
+    width: 33%;
+    height: auto;
+  }
+
+  #skill dl {
+    display: none;
+  }
+
+  #skill .skill_b li p {
+    padding: 20px 20px 40px !important;
+  }
+
+  #skill .battery > .in:last-child,
+  #skill .battery > .in:nth-child(4),
+  #skill #html .battery > .in:nth-child(3),
+  #skill #css .battery > .in:nth-child(3),
+  #skill #ai .battery > .in:nth-child(3),
+  #skill #ps .battery > .in:nth-child(3),
+  #skill #html .battery > .in:nth-child(2),
+  #skill #css .battery > .in:nth-child(2) {
+    transition: 2s;
+    /* background-color: #fff2bd !important; */
+    animation-name: batterycolor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  /* 프로젝트 */
+
+  .project-item {
+    flex-direction: column !important;
+    gap: 30px;
+    width: 80%;
+    margin: 60px auto;
+  }
+  .project-mockup,
+  .project-box {
+    width: 100%;
+    height: 240px;
+  }
+  .project-info {
+    padding: 0;
+  }
+  .project-info h2 {
+    font-size: 24px;
+    letter-spacing: -1px;
+  }
+  .project-info h2::before {
+    font-size: 50px;
+  }
+
+  .project-info th,
+  .project-info td {
+    font-size: 12px;
+    letter-spacing: -1px;
+  }
+  .btn_area .btn {
+    width: 140px;
+    height: 50px;
+    font-size: 10px;
+  }
+  .btn_area.single-btn .btn {
+    width: 300px;
+  }
+
+  .modal img {
+    width: 70%;
+    margin-top: 20vh;
+  }
+
+  .modal span {
+    right: inherit;
+    margin-top: 15vh;
+    margin-right: 20px;
+  }
+
+  /* 주의: 동일한 부분이 pc.css에 있고, 여기서 mobile일 때도 적용되고 있다.
+이 부분을 미디어쿼리를 통해 base.css, pc.css, mobile.css로 분리해야 한다! */
+
+  #design .g_nav > ul > li {
+    margin: 20px 5px;
+  }
+
+  #design .g_nav > ul > li > a {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+
+  #design .g_list li {
+    width: 44%;
+    height: 25vw;
+  }
+  #design .g_nav > ul > li:first-child {
+    display: none;
+  }
+  #design .g_list > li .caption {
+    bottom: 0 !important;
+  }
+
+  /* 컨택트 */
+
+  #contact {
+    margin-top: 50px;
+  }
+
+  #contact ul {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 480px auto auto;
+  }
+
+  #contact ul .bgbox {
+    width: 90%;
+    height: 400px;
+  }
+
+  #contact > ul > li .bgbox:first-child {
+    top: 2%;
+    left: 3%;
+  }
+
+  #contact > ul > li .bgbox:nth-child(2) {
+    top: 1%;
+    left: 5%;
+  }
+
+  #contact > ul > li .box {
+    width: 90%;
+    top: 0%;
+    left: 7%;
+  }
+
+  #contact ul li:nth-child(2) {
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  #contact > ul > li > h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  @keyframes animateShadow {
+    100% {
+      text-shadow:
+        0px 0px #fff2bd,
+        -1px 1px #fff2bd,
+        -2px 2px #fff2bd,
+        -3px 3px #fff2bd,
+        -4px 4px #fff2bd,
+        -5px 5px #fff2bd;
+    }
+  }
+
+  #contact > ul > li > p {
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0 10px;
+  }
+
+  aside .topBtn {
+    /* padding: 15px 13px; 
+        border-radius: 50%; 
+        background-color: #dbecb3;*/
+    font-size: 50px;
+    position: absolute;
+    right: 10px;
+    bottom: 180px;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 540px) {
+    .main_title .bgbox,
+    .main_title .box {
+      height: 270px;
+    }
+    .main_title .box > h1 {
+      font-size: 40px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .main_title .box > h1 {
+      font-size: 33px;
+    }
+
+    #profile > ul > #photo div h3 {
+      font-size: 16px;
+    }
+
+    #profile > ul > #photo > div > p {
+      font-size: 12px;
+    }
+
+    #project ul li .num {
+      font-size: 58px;
+    }
+
+    #project .ui_box h2 {
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    .txtbox > table {
+      width: 100%;
+    }
+
+    .btn_area a .btn {
+      width: 140px;
+    }
+
+    #contact input,
+    textarea {
+      width: 250px;
+    }
+  }
+
+  @media screen and (max-width: 280px) {
+    .main_title .box > h1 {
+      font-size: 30px;
+    }
+    .main_title .box p {
+      font-size: 12px;
+    }
+
+    #profile > ul > #photo div {
+      width: 95%;
+    }
+
+    #profile > ul > #photo div h3 {
+      font-size: 14px;
+    }
+
+    #profile > ul > #photo > div > p {
+      font-size: 11px;
+    }
+
+    #project .ui_box h2 {
+      font-size: 23px;
+      line-height: 30px;
+    }
+
+    .btn_area a .btn {
+      width: 124px;
+      height: 44px;
+    }
+
+    button.btn {
+      font-size: 11px;
+    }
+
+    #contact input,
+    textarea {
+      width: 216px;
+    }
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 767px) {
+  .main_title .bgbox,
+  .main_title .box {
+    width: 70%;
+    height: 330px;
+  }
+
+  .main_title .box > h1 {
+    font-size: 46px;
+  }
+
+  .main_title .box p {
+    font-size: 20px;
+    padding-top: 146px;
+  }
+
+  #profile > ul {
+    width: 80%;
+  }
+
+  .main_title .bgbox:first-child {
+    left: 13%;
+  }
+
+  .main_title .bgbox:nth-child(2) {
+    left: 15%;
+  }
+
+  .main_title .box {
+    left: 17%;
+  }
+
+  #profile > ul {
+    width: 85%;
+  }
+
+  #skill .skill_b {
+    width: 80%;
+  }
+
+  #project div {
+    height: 300px;
+  }
+
+  #project .ui_box {
+    grid-template-rows: 360px 400px;
+    height: 820px;
+  }
+
+  #project .pinkbox .bgbox:first-child {
+    right: -1%;
+    top: 4%;
+  }
+
+  #project .pinkbox .bgbox:nth-child(2) {
+    right: 1%;
+    top: 3%;
+  }
+
+  #project .pinkbox .box {
+    right: 3%;
+    top: 2%;
+    background-color: #fff;
+  }
+
+  #contact ul .bgbox {
+    width: 90%;
+  }
+}
