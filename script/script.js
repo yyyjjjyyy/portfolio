@@ -73,9 +73,6 @@ $(document).ready(function () {
   //변수 선언
 
   var gnb = $(".gnb ul > li");
-  // let m1 = $('.gnb li:first-child a');
-  // let m2 = $('.gnb li:nth-child(2) a'); let m3 = $('.gnb li:nth-child(3) a');
-  // let m4 = $('.gnb li:nth-child(4) a'); let m5 = $('.gnb li:last-child a');
 
   // 제이쿼리에서 a요소 클릭시 새로고침이 되는데 이걸 방지해주는 내용 e. preventDefault(); return false; 둘 중
   // 하나만 사용하면 됨.

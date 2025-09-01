@@ -958,7 +958,7 @@ table tr {
 
 #design .g_list li {
   width: 21%;
-  height: 125px;
+  height: 140px;
   border: 3px solid #62aca3;
   /* #8385c3;*/
   box-shadow: 10px 10px #b3dbd1;
@@ -974,6 +974,10 @@ table tr {
   width: 100%;
   background-color: #fff;
   transition: 1s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 #design .g_list > li .caption {
